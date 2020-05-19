@@ -1,4 +1,4 @@
-# Localhost8088.ApplicationReplaced
+# AsteriskAri.ApplicationReplaced
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Localhost8088.Channel
+# AsteriskAri.Channel
 
 ## Properties
 Name | Type | Description | Notes

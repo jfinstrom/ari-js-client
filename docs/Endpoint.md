@@ -1,4 +1,4 @@
-# Localhost8088.Endpoint
+# AsteriskAri.Endpoint
 
 ## Properties
 Name | Type | Description | Notes

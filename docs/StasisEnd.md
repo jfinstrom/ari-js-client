@@ -1,4 +1,4 @@
-# Localhost8088.StasisEnd
+# AsteriskAri.StasisEnd
 
 ## Properties
 Name | Type | Description | Notes

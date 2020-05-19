@@ -1,4 +1,4 @@
-# Localhost8088.ChannelHold
+# AsteriskAri.ChannelHold
 
 ## Properties
 Name | Type | Description | Notes

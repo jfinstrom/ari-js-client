@@ -1,4 +1,4 @@
-# Localhost8088.ChannelHangupRequest
+# AsteriskAri.ChannelHangupRequest
 
 ## Properties
 Name | Type | Description | Notes

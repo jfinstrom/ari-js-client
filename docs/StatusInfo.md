@@ -1,4 +1,4 @@
-# Localhost8088.StatusInfo
+# AsteriskAri.StatusInfo
 
 ## Properties
 Name | Type | Description | Notes

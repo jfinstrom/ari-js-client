@@ -1,4 +1,4 @@
-# Localhost8088.DeviceState
+# AsteriskAri.DeviceState
 
 ## Properties
 Name | Type | Description | Notes

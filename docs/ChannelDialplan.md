@@ -1,4 +1,4 @@
-# Localhost8088.ChannelDialplan
+# AsteriskAri.ChannelDialplan
 
 ## Properties
 Name | Type | Description | Notes

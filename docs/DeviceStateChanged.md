@@ -1,4 +1,4 @@
-# Localhost8088.DeviceStateChanged
+# AsteriskAri.DeviceStateChanged
 
 ## Properties
 Name | Type | Description | Notes

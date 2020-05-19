@@ -1,4 +1,4 @@
-# Localhost8088.MailboxesApi
+# AsteriskAri.MailboxesApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -17,9 +17,9 @@ Destroy a mailbox.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.MailboxesApi();
+let apiInstance = new AsteriskAri.MailboxesApi();
 let mailboxName = "mailboxName_example"; // String | Name of the mailbox
 
 apiInstance.deletemailbox(mailboxName, (error, data, response) => {
@@ -58,9 +58,9 @@ Retrieve the current state of a mailbox.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.MailboxesApi();
+let apiInstance = new AsteriskAri.MailboxesApi();
 let mailboxName = "mailboxName_example"; // String | Name of the mailbox
 
 apiInstance.getmailbox(mailboxName, (error, data, response) => {
@@ -99,9 +99,9 @@ List all mailboxes.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.MailboxesApi();
+let apiInstance = new AsteriskAri.MailboxesApi();
 apiInstance.listmailboxes((error, data, response) => {
   if (error) {
     console.error(error);
@@ -135,9 +135,9 @@ Change the state of a mailbox. (Note - implicitly creates the mailbox).
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.MailboxesApi();
+let apiInstance = new AsteriskAri.MailboxesApi();
 let mailboxName = "mailboxName_example"; // String | Name of the mailbox
 let oldMessages = 56; // Number | Count of old messages in the mailbox
 let newMessages = 56; // Number | Count of new messages in the mailbox

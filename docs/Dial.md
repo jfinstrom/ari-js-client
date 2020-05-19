@@ -1,4 +1,4 @@
-# Localhost8088.Dial
+# AsteriskAri.Dial
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Localhost8088.AsteriskInfo
+# AsteriskAri.AsteriskInfo
 
 ## Properties
 Name | Type | Description | Notes

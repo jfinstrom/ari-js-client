@@ -1,4 +1,4 @@
-# Localhost8088.ApplicationsApi
+# AsteriskAri.ApplicationsApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -20,9 +20,9 @@ Allowed and/or disallowed event type filtering can be done. The body (parameter)
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ApplicationsApi();
+let apiInstance = new AsteriskAri.ApplicationsApi();
 let applicationName = "applicationName_example"; // String | Application's name
 let opts = { 
   'body': null // Object | Specify which event types to allow/disallow
@@ -64,9 +64,9 @@ Get details of an application.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ApplicationsApi();
+let apiInstance = new AsteriskAri.ApplicationsApi();
 let applicationName = "applicationName_example"; // String | Application's name
 
 apiInstance.get(applicationName, (error, data, response) => {
@@ -105,9 +105,9 @@ List all applications.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ApplicationsApi();
+let apiInstance = new AsteriskAri.ApplicationsApi();
 apiInstance.list((error, data, response) => {
   if (error) {
     console.error(error);
@@ -143,9 +143,9 @@ Returns the state of the application after the subscriptions have changed
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ApplicationsApi();
+let apiInstance = new AsteriskAri.ApplicationsApi();
 let applicationName = "applicationName_example"; // String | Application's name
 let eventSource = ["eventSource_example"]; // [String] | URI for event source (channel:{channelId}, bridge:{bridgeId}, endpoint:{tech}[/{resource}], deviceState:{deviceName}
 
@@ -188,9 +188,9 @@ Returns the state of the application after the subscriptions have changed
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ApplicationsApi();
+let apiInstance = new AsteriskAri.ApplicationsApi();
 let applicationName = "applicationName_example"; // String | Application's name
 let eventSource = ["eventSource_example"]; // [String] | URI for event source (channel:{channelId}, bridge:{bridgeId}, endpoint:{tech}[/{resource}], deviceState:{deviceName}
 

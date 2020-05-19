@@ -1,4 +1,4 @@
-# Localhost8088.FormatLangPair
+# AsteriskAri.FormatLangPair
 
 ## Properties
 Name | Type | Description | Notes

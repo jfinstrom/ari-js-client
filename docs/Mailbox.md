@@ -1,4 +1,4 @@
-# Localhost8088.Mailbox
+# AsteriskAri.Mailbox
 
 ## Properties
 Name | Type | Description | Notes

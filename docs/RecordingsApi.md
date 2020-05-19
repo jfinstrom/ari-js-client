@@ -1,4 +1,4 @@
-# Localhost8088.RecordingsApi
+# AsteriskAri.RecordingsApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -25,9 +25,9 @@ Stop a live recording and discard it.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording
 
 apiInstance.cancel(recordingName, (error, data, response) => {
@@ -66,9 +66,9 @@ Copy a stored recording.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording to copy
 let destinationRecordingName = "destinationRecordingName_example"; // String | The destination name of the recording
 
@@ -109,9 +109,9 @@ Delete a stored recording.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording
 
 apiInstance.deleteStored(recordingName, (error, data, response) => {
@@ -150,9 +150,9 @@ List live recordings.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording
 
 apiInstance.getLive(recordingName, (error, data, response) => {
@@ -191,9 +191,9 @@ Get a stored recording&#x27;s details.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording
 
 apiInstance.getStored(recordingName, (error, data, response) => {
@@ -232,9 +232,9 @@ Get the file associated with the stored recording.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording
 
 apiInstance.getStoredFile(recordingName, (error, data, response) => {
@@ -273,9 +273,9 @@ List recordings that are complete.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 apiInstance.listStored((error, data, response) => {
   if (error) {
     console.error(error);
@@ -311,9 +311,9 @@ Muting a recording suspends silence detection, which will be restarted when the 
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording
 
 apiInstance.muterecording(recordingName, (error, data, response) => {
@@ -354,9 +354,9 @@ Pausing a recording suspends silence detection, which will be restarted when the
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording
 
 apiInstance.pause(recordingName, (error, data, response) => {
@@ -395,9 +395,9 @@ Stop a live recording and store it.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording
 
 apiInstance.stoprecording(recordingName, (error, data, response) => {
@@ -436,9 +436,9 @@ Unmute a live recording.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording
 
 apiInstance.unmuterecording(recordingName, (error, data, response) => {
@@ -477,9 +477,9 @@ Unpause a live recording.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.RecordingsApi();
+let apiInstance = new AsteriskAri.RecordingsApi();
 let recordingName = "recordingName_example"; // String | The name of the recording
 
 apiInstance.unpause(recordingName, (error, data, response) => {

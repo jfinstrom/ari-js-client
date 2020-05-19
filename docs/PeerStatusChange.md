@@ -1,4 +1,4 @@
-# Localhost8088.PeerStatusChange
+# AsteriskAri.PeerStatusChange
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Localhost8088.ChannelUserevent
+# AsteriskAri.ChannelUserevent
 
 ## Properties
 Name | Type | Description | Notes

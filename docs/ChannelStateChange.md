@@ -1,4 +1,4 @@
-# Localhost8088.ChannelStateChange
+# AsteriskAri.ChannelStateChange
 
 ## Properties
 Name | Type | Description | Notes

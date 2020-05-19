@@ -1,4 +1,4 @@
-# Localhost8088.LogChannel
+# AsteriskAri.LogChannel
 
 ## Properties
 Name | Type | Description | Notes

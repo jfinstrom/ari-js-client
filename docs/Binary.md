@@ -1,4 +1,4 @@
-# Localhost8088.Binary
+# AsteriskAri.Binary
 
 ## Properties
 Name | Type | Description | Notes

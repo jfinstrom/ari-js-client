@@ -1,4 +1,4 @@
-# Localhost8088.ChannelLeftBridge
+# AsteriskAri.ChannelLeftBridge
 
 ## Properties
 Name | Type | Description | Notes

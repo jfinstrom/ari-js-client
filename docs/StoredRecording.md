@@ -1,4 +1,4 @@
-# Localhost8088.StoredRecording
+# AsteriskAri.StoredRecording
 
 ## Properties
 Name | Type | Description | Notes

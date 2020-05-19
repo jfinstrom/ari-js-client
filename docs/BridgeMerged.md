@@ -1,4 +1,4 @@
-# Localhost8088.BridgeMerged
+# AsteriskAri.BridgeMerged
 
 ## Properties
 Name | Type | Description | Notes

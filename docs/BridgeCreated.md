@@ -1,4 +1,4 @@
-# Localhost8088.BridgeCreated
+# AsteriskAri.BridgeCreated
 
 ## Properties
 Name | Type | Description | Notes

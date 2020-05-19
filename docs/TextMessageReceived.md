@@ -1,4 +1,4 @@
-# Localhost8088.TextMessageReceived
+# AsteriskAri.TextMessageReceived
 
 ## Properties
 Name | Type | Description | Notes

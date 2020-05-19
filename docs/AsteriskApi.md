@@ -1,4 +1,4 @@
-# Localhost8088.AsteriskApi
+# AsteriskAri.AsteriskApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -29,9 +29,9 @@ Adds a log channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let logChannelName = "logChannelName_example"; // String | The log channel to add
 let configuration = "configuration_example"; // String | levels of the log channel
 
@@ -72,9 +72,9 @@ Deletes a log channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let logChannelName = "logChannelName_example"; // String | Log channels name
 
 apiInstance.deleteLog(logChannelName, (error, data, response) => {
@@ -113,9 +113,9 @@ Delete a dynamic configuration object.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let configClass = "configClass_example"; // String | The configuration class containing dynamic configuration objects.
 let objectType = "objectType_example"; // String | The type of configuration object to delete.
 let id = "id_example"; // String | The unique identifier of the object to delete.
@@ -158,9 +158,9 @@ Get the value of a global variable.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let variable = "variable_example"; // String | The variable to get
 
 apiInstance.getGlobalVar(variable, (error, data, response) => {
@@ -199,9 +199,9 @@ Gets Asterisk system information.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let opts = { 
   'only': ["only_example"] // [String] | Filter information returned
 };
@@ -241,9 +241,9 @@ Get Asterisk module information.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let moduleName = "moduleName_example"; // String | Module's name
 
 apiInstance.getModule(moduleName, (error, data, response) => {
@@ -282,9 +282,9 @@ Retrieve a dynamic configuration object.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let configClass = "configClass_example"; // String | The configuration class containing dynamic configuration objects.
 let objectType = "objectType_example"; // String | The type of configuration object to retrieve.
 let id = "id_example"; // String | The unique identifier of the object to retrieve.
@@ -327,9 +327,9 @@ Gets Asterisk log channel information.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 apiInstance.listLogChannels((error, data, response) => {
   if (error) {
     console.error(error);
@@ -363,9 +363,9 @@ List Asterisk modules.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 apiInstance.listModules((error, data, response) => {
   if (error) {
     console.error(error);
@@ -399,9 +399,9 @@ Load an Asterisk module.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let moduleName = "moduleName_example"; // String | Module's name
 
 apiInstance.loadModule(moduleName, (error, data, response) => {
@@ -440,9 +440,9 @@ Response pong message.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 apiInstance.ping((error, data, response) => {
   if (error) {
     console.error(error);
@@ -476,9 +476,9 @@ Reload an Asterisk module.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let moduleName = "moduleName_example"; // String | Module's name
 
 apiInstance.reloadModule(moduleName, (error, data, response) => {
@@ -517,9 +517,9 @@ Rotates a log channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let logChannelName = "logChannelName_example"; // String | Log channel's name
 
 apiInstance.rotateLog(logChannelName, (error, data, response) => {
@@ -558,9 +558,9 @@ Set the value of a global variable.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let variable = "variable_example"; // String | The variable to set
 let opts = { 
   'value': "value_example" // String | The value to set the variable to
@@ -602,9 +602,9 @@ Unload an Asterisk module.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let moduleName = "moduleName_example"; // String | Module's name
 
 apiInstance.unloadModule(moduleName, (error, data, response) => {
@@ -643,14 +643,14 @@ Create or update a dynamic configuration object.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.AsteriskApi();
+let apiInstance = new AsteriskAri.AsteriskApi();
 let configClass = "configClass_example"; // String | The configuration class containing dynamic configuration objects.
 let objectType = "objectType_example"; // String | The type of configuration object to create or update.
 let id = "id_example"; // String | The unique identifier of the object to create or update.
 let opts = { 
-  'body': new Localhost8088.Containers() // Containers | The body object should have a value that is a list of ConfigTuples, which provide the fields to update. Ex. [ { "attribute": "directmedia", "value": "false" } ]
+  'body': new AsteriskAri.Containers() // Containers | The body object should have a value that is a list of ConfigTuples, which provide the fields to update. Ex. [ { "attribute": "directmedia", "value": "false" } ]
 };
 apiInstance.updateObject(configClassobjectTypeid, opts, (error, data, response) => {
   if (error) {

@@ -1,4 +1,4 @@
-# Localhost8088.ChannelCallerId
+# AsteriskAri.ChannelCallerId
 
 ## Properties
 Name | Type | Description | Notes

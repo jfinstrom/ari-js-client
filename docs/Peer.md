@@ -1,4 +1,4 @@
-# Localhost8088.Peer
+# AsteriskAri.Peer
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Localhost8088.ChannelVarset
+# AsteriskAri.ChannelVarset
 
 ## Properties
 Name | Type | Description | Notes

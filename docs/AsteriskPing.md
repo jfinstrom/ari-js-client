@@ -1,4 +1,4 @@
-# Localhost8088.AsteriskPing
+# AsteriskAri.AsteriskPing
 
 ## Properties
 Name | Type | Description | Notes

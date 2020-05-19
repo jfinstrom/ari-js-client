@@ -1,4 +1,4 @@
-# Localhost8088.ChannelsApi
+# AsteriskAri.ChannelsApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -46,9 +46,9 @@ Using media operations such as /play on a channel playing MOH in this manner wil
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let opts = { 
   'mohClass': "mohClass_example" // String | Music on hold class to use
@@ -90,9 +90,9 @@ Answer a channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 
 apiInstance.answer(channelId, (error, data, response) => {
@@ -131,9 +131,9 @@ Exit application; continue execution in the dialplan.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let opts = { 
   'context': "context_example", // String | The context to continue to.
@@ -181,13 +181,13 @@ Create channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let endpoint = "endpoint_example"; // String | Endpoint for channel communication
 let app = "app_example"; // String | Stasis Application to place channel into
 let opts = { 
-  'body': new Localhost8088.Containers() // Containers | The "variables" key in the body object holds variable key/value pairs to set on the channel on creation. Other keys in the body object are interpreted as query parameters. Ex. { "endpoint": "SIP/Alice", "variables": { "CALLERID(name)": "Alice" } }
+  'body': new AsteriskAri.Containers() // Containers | The "variables" key in the body object holds variable key/value pairs to set on the channel on creation. Other keys in the body object are interpreted as query parameters. Ex. { "endpoint": "SIP/Alice", "variables": { "CALLERID(name)": "Alice" } }
   'appArgs': "appArgs_example" // String | The application arguments to pass to the Stasis application provided by 'app'. Mutually exclusive with 'context', 'extension', 'priority', and 'label'.
   'channelId': "channelId_example" // String | The unique id to assign the channel on creation.
   'otherChannelId': "otherChannelId_example" // String | The unique id to assign the second channel when using local channels.
@@ -237,9 +237,9 @@ Stop playing music on hold to a channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 
 apiInstance.deletemoh(channelId, (error, data, response) => {
@@ -278,9 +278,9 @@ Dial a created channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let opts = { 
   'caller': "caller_example", // String | Channel ID of caller
@@ -326,14 +326,14 @@ Create a channel to an External Media source/sink.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let app = "app_example"; // String | Stasis Application to place channel into
 let externalHost = "externalHost_example"; // String | Hostname/ip:port of external host
 let format = "format_example"; // String | Format to encode audio in
 let opts = { 
-  'body': new Localhost8088.Containers() // Containers | The "variables" key in the body object holds variable key/value pairs to set on the channel on creation. Other keys in the body object are interpreted as query parameters. Ex. { "endpoint": "SIP/Alice", "variables": { "CALLERID(name)": "Alice" } }
+  'body': new AsteriskAri.Containers() // Containers | The "variables" key in the body object holds variable key/value pairs to set on the channel on creation. Other keys in the body object are interpreted as query parameters. Ex. { "endpoint": "SIP/Alice", "variables": { "CALLERID(name)": "Alice" } }
   'channelId': "channelId_example" // String | The unique id to assign the channel on creation.
   'encapsulation': "rtp" // String | Payload encapsulation protocol
   'transport': "udp" // String | Transport protocol
@@ -386,9 +386,9 @@ Get the value of a channel variable or function.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let variable = "variable_example"; // String | The channel variable or function to get
 
@@ -429,9 +429,9 @@ Channel details.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 
 apiInstance.getchannel(channelId, (error, data, response) => {
@@ -470,9 +470,9 @@ Delete (i.e. hangup) a channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let opts = { 
   'reasonCode': "reasonCode_example", // String | The reason code for hanging up the channel for detail use. Mutually exclusive with 'reason'. See detail hangup codes at here. https://wiki.asterisk.org/wiki/display/AST/Hangup+Cause+Mappings
@@ -516,9 +516,9 @@ Hold a channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 
 apiInstance.hold(channelId, (error, data, response) => {
@@ -557,9 +557,9 @@ List all active channels in Asterisk.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 apiInstance.listchannels((error, data, response) => {
   if (error) {
     console.error(error);
@@ -593,9 +593,9 @@ Move the channel from one Stasis application to another.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let app = "app_example"; // String | The channel will be passed to this Stasis application.
 let opts = { 
@@ -639,9 +639,9 @@ Mute a channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let opts = { 
   'direction': "both" // String | Direction in which to mute audio
@@ -685,12 +685,12 @@ The new channel is created immediately and a snapshot of it returned. If a Stasi
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let endpoint = "endpoint_example"; // String | Endpoint to call.
 let opts = { 
-  'body': new Localhost8088.Containers() // Containers | The "variables" key in the body object holds variable key/value pairs to set on the channel on creation. Other keys in the body object are interpreted as query parameters. Ex. { "endpoint": "SIP/Alice", "variables": { "CALLERID(name)": "Alice" } }
+  'body': new AsteriskAri.Containers() // Containers | The "variables" key in the body object holds variable key/value pairs to set on the channel on creation. Other keys in the body object are interpreted as query parameters. Ex. { "endpoint": "SIP/Alice", "variables": { "CALLERID(name)": "Alice" } }
   'extension': "extension_example" // String | The extension to dial after the endpoint answers. Mutually exclusive with 'app'.
   'context': "context_example" // String | The context to dial after the endpoint answers. If omitted, uses 'default'. Mutually exclusive with 'app'.
   'priority': 789 // Number | The priority to dial after the endpoint answers. If omitted, uses 1. Mutually exclusive with 'app'.
@@ -755,13 +755,13 @@ The new channel is created immediately and a snapshot of it returned. If a Stasi
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let endpoint = "endpoint_example"; // String | Endpoint to call.
 let channelId = "channelId_example"; // String | The unique id to assign the channel on creation.
 let opts = { 
-  'body': new Localhost8088.Containers() // Containers | The "variables" key in the body object holds variable key/value pairs to set on the channel on creation. Other keys in the body object are interpreted as query parameters. Ex. { "endpoint": "SIP/Alice", "variables": { "CALLERID(name)": "Alice" } }
+  'body': new AsteriskAri.Containers() // Containers | The "variables" key in the body object holds variable key/value pairs to set on the channel on creation. Other keys in the body object are interpreted as query parameters. Ex. { "endpoint": "SIP/Alice", "variables": { "CALLERID(name)": "Alice" } }
   'extension': "extension_example" // String | The extension to dial after the endpoint answers. Mutually exclusive with 'app'.
   'context': "context_example" // String | The context to dial after the endpoint answers. If omitted, uses 'default'. Mutually exclusive with 'app'.
   'priority': 789 // Number | The priority to dial after the endpoint answers. If omitted, uses 1. Mutually exclusive with 'app'.
@@ -825,9 +825,9 @@ The media URI may be any of a number of URI&#x27;s. Currently sound:, recording:
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let playbackId = "playbackId_example"; // String | Playback ID.
 let media = ["media_example"]; // [String] | Media URIs to play.
@@ -879,9 +879,9 @@ The media URI may be any of a number of URI&#x27;s. Currently sound:, recording:
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let media = ["media_example"]; // [String] | Media URIs to play.
 let opts = { 
@@ -933,9 +933,9 @@ Record audio from a channel. Note that this will not capture audio sent to the c
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let name = "name_example"; // String | Recording's filename
 let format = "format_example"; // String | Format to encode audio in
@@ -989,9 +989,9 @@ Redirect the channel to a different location.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let endpoint = "endpoint_example"; // String | The endpoint to redirect the channel to
 
@@ -1032,9 +1032,9 @@ Indicate ringing to a channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 
 apiInstance.ring(channelId, (error, data, response) => {
@@ -1073,9 +1073,9 @@ Stop ringing indication on a channel if locally generated.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 
 apiInstance.ringStop(channelId, (error, data, response) => {
@@ -1114,9 +1114,9 @@ RTP stats on a channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 
 apiInstance.rtpstatistics(channelId, (error, data, response) => {
@@ -1155,9 +1155,9 @@ Send provided DTMF to a given channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let opts = { 
   'dtmf': "dtmf_example", // String | DTMF To send.
@@ -1207,9 +1207,9 @@ Set the value of a channel variable or function.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let variable = "variable_example"; // String | The channel variable or function to set
 let opts = { 
@@ -1255,9 +1255,9 @@ Snoop (spy/whisper) on a specific channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let app = "app_example"; // String | Application the snooping channel is placed into
 let opts = { 
@@ -1309,9 +1309,9 @@ Snoop (spy/whisper) on a specific channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let snoopId = "snoopId_example"; // String | Unique ID to assign to snooping channel
 let app = "app_example"; // String | Application the snooping channel is placed into
@@ -1363,9 +1363,9 @@ Using media operations such as /play on a channel playing silence in this manner
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 
 apiInstance.startSilence(channelId, (error, data, response) => {
@@ -1404,9 +1404,9 @@ Stop playing silence to a channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 
 apiInstance.stopSilence(channelId, (error, data, response) => {
@@ -1445,9 +1445,9 @@ Remove a channel from hold.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 
 apiInstance.unhold(channelId, (error, data, response) => {
@@ -1486,9 +1486,9 @@ Unmute a channel.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.ChannelsApi();
+let apiInstance = new AsteriskAri.ChannelsApi();
 let channelId = "channelId_example"; // String | Channel's id
 let opts = { 
   'direction': "both" // String | Direction in which to unmute audio

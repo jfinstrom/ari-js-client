@@ -1,4 +1,4 @@
-# Localhost8088.BridgeAttendedTransfer
+# AsteriskAri.BridgeAttendedTransfer
 
 ## Properties
 Name | Type | Description | Notes

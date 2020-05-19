@@ -1,4 +1,4 @@
-# Localhost8088.Bridge
+# AsteriskAri.Bridge
 
 ## Properties
 Name | Type | Description | Notes

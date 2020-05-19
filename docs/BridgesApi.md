@@ -1,4 +1,4 @@
-# Localhost8088.BridgesApi
+# AsteriskAri.BridgesApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -27,9 +27,9 @@ Add a channel to a bridge.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 let channel = ["channel_example"]; // [String] | Ids of channels to add to bridge
 let opts = { 
@@ -79,9 +79,9 @@ Removes any explicit video source in a multi-party mixing bridge. This operation
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 
 apiInstance.clearVideoSource(bridgeId, (error, data, response) => {
@@ -122,9 +122,9 @@ This bridge persists until it has been shut down, or Asterisk has been shut down
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let opts = { 
   'type': "type_example", // String | Comma separated list of bridge type attributes (mixing, holding, dtmf_events, proxy_media, video_sfu).
   'bridgeId': "bridgeId_example", // String | Unique ID to give to the bridge being created.
@@ -170,9 +170,9 @@ This bridge persists until it has been shut down, or Asterisk has been shut down
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Unique ID to give to the bridge being created.
 let opts = { 
   'type': "type_example", // String | Comma separated list of bridge type attributes (mixing, holding, dtmf_events, proxy_media, video_sfu) to set.
@@ -218,9 +218,9 @@ If any channels are in this bridge, they will be removed and resume whatever the
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 
 apiInstance.destroy(bridgeId, (error, data, response) => {
@@ -259,9 +259,9 @@ Get bridge details.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 
 apiInstance.getbridge(bridgeId, (error, data, response) => {
@@ -300,9 +300,9 @@ List all active bridges in Asterisk.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 apiInstance.listbridges((error, data, response) => {
   if (error) {
     console.error(error);
@@ -338,9 +338,9 @@ The media URI may be any of a number of URI&#x27;s. Currently sound:, recording:
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 let media = ["media_example"]; // [String] | Media URIs to play.
 let opts = { 
@@ -392,9 +392,9 @@ The media URI may be any of a number of URI&#x27;s. Currently sound:, recording:
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 let playbackId = "playbackId_example"; // String | Playback ID.
 let media = ["media_example"]; // [String] | Media URIs to play.
@@ -446,9 +446,9 @@ This records the mixed audio from all channels participating in this bridge.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 let name = "name_example"; // String | Recording's filename
 let format = "format_example"; // String | Format to encode audio in
@@ -502,9 +502,9 @@ Remove a channel from a bridge.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 let channel = ["channel_example"]; // [String] | Ids of channels to remove from bridge
 
@@ -545,9 +545,9 @@ Set a channel as the video source in a multi-party mixing bridge. This operation
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 let channelId = "channelId_example"; // String | Channel's id
 
@@ -588,9 +588,9 @@ Play music on hold to a bridge or change the MOH class that is playing.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 let opts = { 
   'mohClass': "mohClass_example" // String | Channel's id
@@ -634,9 +634,9 @@ This will only stop music on hold being played via POST bridges/{bridgeId}/moh.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.BridgesApi();
+let apiInstance = new AsteriskAri.BridgesApi();
 let bridgeId = "bridgeId_example"; // String | Bridge's id
 
 apiInstance.stopMoh(bridgeId, (error, data, response) => {

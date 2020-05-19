@@ -1,4 +1,4 @@
-# Localhost8088.ConfigTuple
+# AsteriskAri.ConfigTuple
 
 ## Properties
 Name | Type | Description | Notes

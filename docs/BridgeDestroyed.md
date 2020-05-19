@@ -1,4 +1,4 @@
-# Localhost8088.BridgeDestroyed
+# AsteriskAri.BridgeDestroyed
 
 ## Properties
 Name | Type | Description | Notes

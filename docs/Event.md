@@ -1,4 +1,4 @@
-# Localhost8088.Event
+# AsteriskAri.Event
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Localhost8088.Variable
+# AsteriskAri.Variable
 
 ## Properties
 Name | Type | Description | Notes

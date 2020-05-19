@@ -1,4 +1,4 @@
-# Localhost8088.EndpointStateChange
+# AsteriskAri.EndpointStateChange
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Localhost8088.EventsApi
+# AsteriskAri.EventsApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -15,9 +15,9 @@ WebSocket connection for events.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.EventsApi();
+let apiInstance = new AsteriskAri.EventsApi();
 let app = ["app_example"]; // [String] | Applications to subscribe to.
 let opts = { 
   'subscribeAll': true // Boolean | Subscribe to all Asterisk events. If provided, the applications listed will be subscribed to all events, effectively disabling the application specific subscriptions. Default is 'false'.
@@ -59,13 +59,13 @@ Generate a user event.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.EventsApi();
+let apiInstance = new AsteriskAri.EventsApi();
 let application = "application_example"; // String | The name of the application that will receive this event
 let eventName = "eventName_example"; // String | Event name
 let opts = { 
-  'body': new Localhost8088.Containers() // Containers | The "variables" key in the body object holds custom key/value pairs to add to the user event. Ex. { "variables": { "key": "value" } }
+  'body': new AsteriskAri.Containers() // Containers | The "variables" key in the body object holds custom key/value pairs to add to the user event. Ex. { "variables": { "key": "value" } }
   'source': ["source_example"] // [String] | URI for event source (channel:{channelId}, bridge:{bridgeId}, endpoint:{tech}/{resource}, deviceState:{deviceName}
 };
 apiInstance.userEvent(applicationeventName, opts, (error, data, response) => {

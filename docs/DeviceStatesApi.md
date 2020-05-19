@@ -1,4 +1,4 @@
-# Localhost8088.DeviceStatesApi
+# AsteriskAri.DeviceStatesApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -17,9 +17,9 @@ Destroy a device-state controlled by ARI.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.DeviceStatesApi();
+let apiInstance = new AsteriskAri.DeviceStatesApi();
 let deviceName = "deviceName_example"; // String | Name of the device
 
 apiInstance.callDelete(deviceName, (error, data, response) => {
@@ -58,9 +58,9 @@ Retrieve the current state of a device.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.DeviceStatesApi();
+let apiInstance = new AsteriskAri.DeviceStatesApi();
 let deviceName = "deviceName_example"; // String | Name of the device
 
 apiInstance.getdevicestate(deviceName, (error, data, response) => {
@@ -99,9 +99,9 @@ List all ARI controlled device states.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.DeviceStatesApi();
+let apiInstance = new AsteriskAri.DeviceStatesApi();
 apiInstance.listDeviceStates((error, data, response) => {
   if (error) {
     console.error(error);
@@ -135,9 +135,9 @@ Change the state of a device controlled by ARI. (Note - implicitly creates the d
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.DeviceStatesApi();
+let apiInstance = new AsteriskAri.DeviceStatesApi();
 let deviceName = "deviceName_example"; // String | Name of the device
 let deviceState = "deviceState_example"; // String | Device state value
 

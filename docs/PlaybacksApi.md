@@ -1,4 +1,4 @@
-# Localhost8088.PlaybacksApi
+# AsteriskAri.PlaybacksApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -16,9 +16,9 @@ Control a playback.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.PlaybacksApi();
+let apiInstance = new AsteriskAri.PlaybacksApi();
 let playbackId = "playbackId_example"; // String | Playback's id
 let operation = "operation_example"; // String | Operation to perform on the playback.
 
@@ -59,9 +59,9 @@ Get a playback&#x27;s details.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.PlaybacksApi();
+let apiInstance = new AsteriskAri.PlaybacksApi();
 let playbackId = "playbackId_example"; // String | Playback's id
 
 apiInstance.getplayback(playbackId, (error, data, response) => {
@@ -100,9 +100,9 @@ Stop a playback.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.PlaybacksApi();
+let apiInstance = new AsteriskAri.PlaybacksApi();
 let playbackId = "playbackId_example"; // String | Playback's id
 
 apiInstance.stop(playbackId, (error, data, response) => {

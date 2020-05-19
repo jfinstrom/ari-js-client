@@ -1,4 +1,4 @@
-# Localhost8088.ChannelDestroyed
+# AsteriskAri.ChannelDestroyed
 
 ## Properties
 Name | Type | Description | Notes

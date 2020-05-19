@@ -1,4 +1,4 @@
-# Localhost8088.ChannelEnteredBridge
+# AsteriskAri.ChannelEnteredBridge
 
 ## Properties
 Name | Type | Description | Notes

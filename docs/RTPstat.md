@@ -1,4 +1,4 @@
-# Localhost8088.RTPstat
+# AsteriskAri.RTPstat
 
 ## Properties
 Name | Type | Description | Notes

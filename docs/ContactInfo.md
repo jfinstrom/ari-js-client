@@ -1,4 +1,4 @@
-# Localhost8088.ContactInfo
+# AsteriskAri.ContactInfo
 
 ## Properties
 Name | Type | Description | Notes

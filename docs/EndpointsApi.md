@@ -1,4 +1,4 @@
-# Localhost8088.EndpointsApi
+# AsteriskAri.EndpointsApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -18,9 +18,9 @@ Details for an endpoint.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.EndpointsApi();
+let apiInstance = new AsteriskAri.EndpointsApi();
 let tech = "tech_example"; // String | Technology of the endpoint
 let resource = "resource_example"; // String | ID of the endpoint
 
@@ -61,9 +61,9 @@ List available endoints for a given endpoint technology.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.EndpointsApi();
+let apiInstance = new AsteriskAri.EndpointsApi();
 let tech = "tech_example"; // String | Technology of the endpoints (sip,iax2,...)
 
 apiInstance.listByTech(tech, (error, data, response) => {
@@ -102,9 +102,9 @@ List all endpoints.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.EndpointsApi();
+let apiInstance = new AsteriskAri.EndpointsApi();
 apiInstance.listendpoints((error, data, response) => {
   if (error) {
     console.error(error);
@@ -138,13 +138,13 @@ Send a message to some technology URI or endpoint.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.EndpointsApi();
+let apiInstance = new AsteriskAri.EndpointsApi();
 let to = "to_example"; // String | The endpoint resource or technology specific URI to send the message to. Valid resources are sip, pjsip, and xmpp.
 let from = "from_example"; // String | The endpoint resource or technology specific identity to send this message from. Valid resources are sip, pjsip, and xmpp.
 let opts = { 
-  'body2': new Localhost8088.Containers() // Containers | 
+  'body2': new AsteriskAri.Containers() // Containers | 
   'body': "body_example" // String | The body of the message
 };
 apiInstance.sendMessage(tofrom, opts, (error, data, response) => {
@@ -186,14 +186,14 @@ Send a message to some endpoint in a technology.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.EndpointsApi();
+let apiInstance = new AsteriskAri.EndpointsApi();
 let from = "from_example"; // String | The endpoint resource or technology specific identity to send this message from. Valid resources are sip, pjsip, and xmpp.
 let tech = "tech_example"; // String | Technology of the endpoint
 let resource = "resource_example"; // String | ID of the endpoint
 let opts = { 
-  'body2': new Localhost8088.Containers() // Containers | 
+  'body2': new AsteriskAri.Containers() // Containers | 
   'body': "body_example" // String | The body of the message
 };
 apiInstance.sendMessageToEndpoint(fromtechresource, opts, (error, data, response) => {

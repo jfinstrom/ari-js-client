@@ -1,4 +1,4 @@
-# Localhost8088.ChannelCreated
+# AsteriskAri.ChannelCreated
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Localhost8088.ChannelConnectedLine
+# AsteriskAri.ChannelConnectedLine
 
 ## Properties
 Name | Type | Description | Notes

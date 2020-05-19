@@ -1,4 +1,4 @@
-# Localhost8088.SoundsApi
+# AsteriskAri.SoundsApi
 
 All URIs are relative to *http://localhost:8088/ari*
 
@@ -15,9 +15,9 @@ Get a sound&#x27;s details.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.SoundsApi();
+let apiInstance = new AsteriskAri.SoundsApi();
 let soundId = "soundId_example"; // String | Sound's id
 
 apiInstance.getsound(soundId, (error, data, response) => {
@@ -56,9 +56,9 @@ List all sounds.
 
 ### Example
 ```javascript
-import Localhost8088 from 'localhost8088';
+import AsteriskAri from 'asterisk_ari';
 
-let apiInstance = new Localhost8088.SoundsApi();
+let apiInstance = new AsteriskAri.SoundsApi();
 let opts = { 
   'lang': "lang_example", // String | Lookup sound for a specific language.
   'format': "format_example" // String | Lookup sound in a specific format.
